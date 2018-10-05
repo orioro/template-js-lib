@@ -1,0 +1,20 @@
+{
+  "name": "template-browser-js-lib",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "browser-sync start --server demo --watch --ignore **/*/index.js --no-ui --no-ghost-mode",
+    "dev": "npm run serve & rollup --config ./rollup/dev.config.js --watch",
+    "bundle": "rollup --config ./rollup/dev.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "rollup": "^0.66.4",
+    "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-node-resolve": "^3.4.0"
+  }
+}
