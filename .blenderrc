@@ -1,5 +1,10 @@
 {
 	"tokens": [
-		"template-browser-js-lib"
-	]	
+		"project-name"
+	],
+	"ignore": [
+		"node_modules/**/*",
+		".DS_Store",
+		"demo/**/*.bundle.js"
+	]
 }

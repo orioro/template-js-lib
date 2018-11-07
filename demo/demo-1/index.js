@@ -1,5 +1,5 @@
-const templateBrowserJsLib = require('../../src')
+const projectName = require('../../src')
 
-console.log(templateBrowserJsLib())
+console.log(projectName())
 
-document.querySelector('body').innerHTML = `Demo: ${templateBrowserJsLib()}`
+document.querySelector('body').innerHTML = `Demo: ${projectName()}`

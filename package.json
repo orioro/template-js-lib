@@ -1,14 +1,15 @@
 {
-  "name": "template-browser-js-lib",
+  "name": "project-name",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "serve": "browser-sync start --server demo --watch --ignore **/*/index.js --no-ui --no-ghost-mode",
     "dev-serve": "npm run serve & rollup --config ./rollup/dev.config.js --watch",
     "dev-test": "jest --watch",
-    "bundle": "rollup --config ./rollup/dev.config.js"
+    "dev-bundle": "rollup --config ./rollup/dev.config.js",
+    "distribute": "rm -rf dist && rollup --config ./rollup/distribute.config.js"
   },
   "author": "",
   "license": "ISC",

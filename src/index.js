@@ -1,5 +1,5 @@
-const templateBrowserJsLib = () => {
-	return 'template-browser-js-lib'
+const projectName = () => {
+	return 'project-name'
 }
 
-module.exports = templateBrowserJsLib
+module.exports = projectName
