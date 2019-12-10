@@ -1,5 +1,1 @@
-const projectName = () => {
-	return 'project-name'
-}
-
-module.exports = projectName
+export const projectName = () => 'project-name'

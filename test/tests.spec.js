@@ -1,4 +1,4 @@
-const projectName = require('../src')
+import { projectName } from '../src'
 
 describe('tests', () => {
 	test('test', () => {
