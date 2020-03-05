@@ -4,8 +4,10 @@ const resolve = require('rollup-plugin-node-resolve')
 const commonjs = require('rollup-plugin-commonjs')
 const babel = require('rollup-plugin-babel')
 
+const jsExtensions = ['.mjs', '.js', '.jsx', '.ts', '.tsx', '.json', '.node']
+
 module.exports = {
-	input: 'src/index.js',
+	input: 'src/index.ts',
 	output: [
 		{
 			file: 'dist/index.js',
@@ -17,13 +19,19 @@ module.exports = {
 			format: 'esm',
 		}
 	],
-	external: Object.keys(require('../package.json').dependencies || {}),
+	external: [
+    ...Object.keys(require('../package.json').dependencies || {}),
+    ...Object.keys(require('../package.json').devDependencies),
+  ],
 	plugins: [
 		babel({
 			babelrc: true,
-			exclude: 'node_modules/**'
+			exclude: 'node_modules/**',
+			extensions: jsExtensions
 		}),
-		resolve(),
+		resolve({
+			extensions: jsExtensions
+		}),
 		commonjs(),
 	]
 }
