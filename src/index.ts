@@ -1,1 +1,1 @@
-export const projectName = (param: string):string => `output ${param}`
+export const projectName = (param: string):string => `output "${param}"`
