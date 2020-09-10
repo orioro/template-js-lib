@@ -8,6 +8,7 @@
     "test": "jest",
     "build": "rm -rf dist && rollup --config ./rollup/build.config.js",
     "prepublish": "npm run build",
+    "update-dependencies": "npx npm-check-updates -u",
     "develop": "rm -rf dist && rollup --config ./rollup/build.config.js --watch"
   },
   "author": "",
