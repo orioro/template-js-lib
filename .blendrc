@@ -1,4 +1,5 @@
 {
+  "name": "Browser compatible JS lib",
 	"tokens": [
     "npm-org",
 		"project-name"
