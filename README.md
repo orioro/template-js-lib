@@ -7,8 +7,7 @@ yarn add @npm-org/project-name
 
 # API Docs
 
-- src/index.ts
-  - [`projectName(param)`](#projectnameparam)
+- [`projectName(param)`](#projectnameparam)
 
 ##### `projectName(param)`
 
