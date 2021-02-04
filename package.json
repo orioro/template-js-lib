@@ -8,7 +8,8 @@
     "test": "jest",
     "dev": "jest --watch",
     "build": "rm -rf dist && rollup --config ./rollup/build.config.js && npm run tsc-declaration",
-    "prepare": "npm run build",
+    "prepare": "npm run build && npm run readme",
+    "readme": "readme",
     "update-dependencies": "npx npm-check-updates -u",
     "tsc-declaration": "tsc --declaration --emitDeclarationOnly --declarationDir dist",
     "commit": "cz"
@@ -19,6 +20,7 @@
     "@babel/core": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-typescript": "^7.12.13",
+    "@orioro/readme": "^0.3.2",
     "@rollup/plugin-babel": "^5.2.3",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.1.1",
