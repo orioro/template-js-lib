@@ -24,6 +24,7 @@
     "@rollup/plugin-babel": "^5.2.3",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.1.1",
+    "@semantic-release/changelog": "^5.0.1",
     "@types/jest": "^26.0.20",
     "babel-jest": "^26.6.3",
     "commitizen": "^4.2.3",
@@ -42,6 +43,7 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
       "@semantic-release/npm",
       "@semantic-release/github"
     ]
