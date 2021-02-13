@@ -7,6 +7,7 @@
 	"ignore": [
 		"node_modules/**/*",
 		".DS_Store",
-		"demo/**/*.bundle.js"
+		"demo/**/*.bundle.js",
+		".blend-upgrades/**/*"
 	]
 }
