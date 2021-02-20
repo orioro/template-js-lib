@@ -8,4 +8,4 @@ yarn add --dev \
   husky
 
 npx husky install
-npx husky add .husky/pre-commit yarn ci-check
+npx husky add .husky/pre-commit 'yarn ci-check'
