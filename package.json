@@ -2,6 +2,13 @@
   "name": "@npm-org/project-name",
   "version": "0.0.0-semantic-release",
   "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/npm-org/node-project-name",
+  "bugs": "https://github.com/npm-org/node-project-name/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm-org/node-project-name.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
@@ -23,6 +30,9 @@
   },
   "author": "",
   "license": "ISC",
+  "files": [
+    "dist/**/*"
+  ],
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
